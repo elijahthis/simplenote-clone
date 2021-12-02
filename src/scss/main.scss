@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF Pro Display/SFProDisplay-Regular.ttf");
+}
+
+$main-width: 600px;
+
+.App {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: rgb(31, 33, 35);
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1em;
+  font-weight: 700;
+  margin: 40px 0px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.27em;
+  width: $main-width;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+a {
+  color: rgb(97, 141, 242);
+  font-size: 16px;
+  // text-decoration: none;
+}
+.lnk-btn {
+  padding: 10px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3361cc;
+  border-radius: 5px;
+  &:hover {
+    background-color: #113ead;
+  }
+}
+
+#web-title {
+  font-size: 18px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+  }
+}
+
+header {
+  height: 72px;
+  margin: 0px 165px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    li {
+      display: inline;
+      margin-left: 16px;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    div {
+      margin-left: 16px;
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      & > * {
+        padding: 8px;
+        // box-sizing: border-box;
+        display: inline-block;
+        margin-left: 16px;
+      }
+      & > :last-child {
+        border-radius: 3px;
+        box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.5);
+        &:hover {
+          box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}

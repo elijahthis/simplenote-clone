@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF Pro Display/SFProDisplay-Regular.ttf");
+}
+
+.App {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #1f2123;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1em;
+  font-weight: 700;
+  margin: 40px 0px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.27em;
+  width: 600px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+a {
+  color: #618df2;
+  font-size: 16px;
+}
+
+.lnk-btn {
+  padding: 10px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3361cc;
+  border-radius: 5px;
+}
+
+.lnk-btn:hover {
+  background-color: #113ead;
+}
+
+#web-title {
+  font-size: 18px;
+}
+
+#web-title::before {
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  position: relative;
+  top: 4px;
+  margin-right: 10px;
+}
+
+header {
+  height: 72px;
+  margin: 0px 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  display: inline;
+  margin-left: 16px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .links div {
+  margin-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header .links div > * {
+  padding: 8px;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+header .links div > :last-child {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+header .links div > :last-child:hover {
+  -webkit-box-shadow: 0px 0px 1px 0px white;
+          box-shadow: 0px 0px 1px 0px white;
+}
