@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF Pro Display/SFProDisplay-Regular.ttf");
+}
+
+.dark {
+  --col: #ffffff;
+  --bg: rgb(31, 33, 35);
+}
+
+.light {
+  --col: rgb(31, 33, 35);
+  --bg: #ffffff;
+}
+
+.signup-sect h2 {
+  width: inherit;
+}
+
+.signup-sect img {
+  width: 92px;
+}
+
+.signup-sect form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.signup-sect input {
+  width: 320px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 13px 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0px;
+  color: var(--col);
+  font-family: SF Pro Display;
+  font-size: 16px;
+}
+
+.signup-sect input[type="email"],
+.signup-sect input[type="password"] {
+  border: 1px solid #8c8f94;
+}
+
+.signup-sect input[type="submit"] {
+  background-color: #618df2;
+}
+
+.signup-sect input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.signup-sect input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.signup-sect .by-creating {
+  color: #8c8f94;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.signup-sect a {
+  font-size: 14px;
+}
+
+.signup-sect .remember,
+.signup-sect .forgot {
+  padding-bottom: 8px;
+}

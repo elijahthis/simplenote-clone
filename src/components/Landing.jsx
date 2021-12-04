@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 import landingImage from "../images/landing-image.png";
 import featureImg1 from "../images/ic_cloud-sync.webp";
 import featureImg2 from "../images/ic_tags.webp";
@@ -15,7 +17,8 @@ import storeImg5 from "../images/ic-linux.png";
 import "../css/main.css";
 import "../css/Landing.css";
 
-const Landing = () => {
+const Landing = (props) => {
+  console.log(props);
   const features = [
     {
       title: "Use it everywhere",
@@ -71,25 +74,17 @@ const Landing = () => {
     [storeImg4, "Download on the", "Windows Store"],
     [storeImg5, "Download for", "Linux"],
   ];
-  const footerLinks = [
-    "Contact Us",
-    "Help",
-    "Blog",
-    "Developers",
-    "Terms & Conditions",
-    "Privacy",
-    "Press",
-    "Privacy Notice",
-  ];
+
   return (
-    <main>
+    <>
+      <NavBar theme={props.theme} changeTheme={props.changeTheme}/>
       <section className="main-block">
         <h1>The simplest way to keep notes</h1>
         <p>
           All your notes, synced on all your devices. Get Simplenote now for
           iOS, Android, Mac, Windows, Linux, or in your browser.
         </p>
-        <Link to="" className="lnk-btn">
+        <Link to="/signup" className="lnk-btn">
           Sign up now
         </Link>
       </section>
@@ -152,15 +147,8 @@ const Landing = () => {
           </Link>
         </p>
       </section>
-      <footer>
-        <div>
-          {footerLinks.map((item) => (
-            <Link to="">{item}</Link>
-          ))}
-        </div>
-        <Link to="">&copy; Automatic</Link>
-      </footer>
-    </main>
+      <Footer />
+    </>
   );
 };
 

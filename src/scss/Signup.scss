@@ -1,0 +1,77 @@
+@import "config";
+
+$width: 320px;
+$height: 40px;
+
+.dark {
+  --col: #ffffff;
+  --bg: rgb(31, 33, 35);
+}
+.light {
+  --col: rgb(31, 33, 35);
+  --bg: #ffffff;
+}
+
+.signup-sect {
+  h2 {
+    width: inherit;
+  }
+  img {
+    width: 92px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    width: $width;
+    height: $height;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+    color: var(--col);
+
+    font-family: SF Pro Display;
+    font-size: 16px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    border: 1px solid #8c8f94;
+  }
+  input[type="submit"] {
+    background-color: #618df2;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
+
+  .by-creating {
+    color: #8c8f94;
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .remember,
+  .forgot {
+    padding-bottom: 8px;
+  }
+}
