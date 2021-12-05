@@ -4,10 +4,10 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import "../css/main.css";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
-      <NavBar />
+      <NavBar theme={props.theme} changeTheme={props.changeTheme} />
       <section className="contact">
         <h1>Contact Us</h1>
         <p>

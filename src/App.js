@@ -22,7 +22,10 @@ class App extends Component {
   render() {
     console.log(localStorage);
     return (
-      <div className={`App ${this.state.theme ? "light" : "dark"}`}>
+      <div
+        className={`App ${this.state.theme ? "light" : "dark"}`}
+        style={{ minHeight: "100vh" }}
+      >
         <main>
           <BrowserRouter>
             <Routes>
@@ -45,7 +48,7 @@ class App extends Component {
               />
               <Route
                 path="/contact-us"
-                element={<Contact theme={this.state.theme} />}
+                element={<Contact theme={this.state.theme} changeTheme={this.changeTheme} />}
               />
             </Routes>
           </BrowserRouter>

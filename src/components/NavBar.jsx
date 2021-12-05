@@ -40,35 +40,86 @@ c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z
     </svg>,
   ];
 
-  console.log(props);
-  return (
-    <header>
-      <p id="web-title">Simplenote</p>
+  const popRef = React.useRef(null);
+  const handlePop = () => {
+    if (popRef.current.style.height === "0px" || popRef.current.style.height === null) {
+      popRef.current.style.height = "125px";
+    } else {
+      popRef.current.style.height = "0px";
+    }
+  };
 
-      <div className="links">
-        <ul>
-          <li>
-            <Link to="">Contact Us</Link>
-          </li>
-          <li>
-            <Link to="">Help</Link>
-          </li>
-          <li>
-            <Link to="">Blog</Link>
-          </li>
-        </ul>
-        <div>
-          <Link to="/login">Log In</Link>
-          <Link to="/signup" className="s-up">
-            Sign Up
-          </Link>
-          <div className="theme-toggler" onClick={props.changeTheme}>
-            {toggleImages[props.theme]}
-            <p>{props.theme ? "dark" : "light"}</p>
+  return (
+    <>
+      <header className="header-web">
+        <Link to="/">
+          <p id="web-title">Simplenote</p>
+        </Link>
+
+        <div className="links">
+          <ul>
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="">Help</Link>
+            </li>
+            <li>
+              <Link to="">Blog</Link>
+            </li>
+          </ul>
+          <div>
+            <Link to="/login">Log In</Link>
+            <Link to="/signup" className="s-up">
+              Sign Up
+            </Link>
+            <div className="theme-toggler" onClick={props.changeTheme}>
+              {toggleImages[props.theme]}
+              <p>{props.theme ? "dark" : "light"}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <header className="header-mobile">
+        <Link to="/">
+          <p id="web-title">Simplenote</p>
+        </Link>
+
+        <div onClick={handlePop}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+            <g fill={props.theme ? "#3361cc" : "#fff"} fillRule="evenodd">
+              <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+            </g>
+          </svg>
+        </div>
+        <div className="theme-toggler" onClick={props.changeTheme}>
+          {toggleImages[props.theme]}
+          <p>{props.theme ? "dark" : "light"}</p>
+        </div>
+        <div className="links" ref={popRef}>
+          <ul>
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="">Help</Link>
+            </li>
+            <li>
+              <Link to="">Blog</Link>
+            </li>
+            <li>
+              <Link to="/login">Log In</Link>
+            </li>
+            <li>
+              <Link to="/signup" className="s-up">
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+          <div></div>
+        </div>
+      </header>
+    </>
   );
 };
 
