@@ -187,7 +187,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
   .dark {
     --col: #ffffff;
     --bg: rgb(31, 33, 35);
@@ -377,6 +377,190 @@
   }
   .contact {
     width: 600px;
+    margin-bottom: 50px;
+  }
+  .contact p {
+    text-align: left;
+    margin: 0px;
+  }
+  .contact a {
+    font-size: 18px;
+    line-height: 1.6em;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .dark {
+    --col: #ffffff;
+    --bg: rgb(31, 33, 35);
+    --bx: rgba(255, 255, 255, 0.5);
+    --bx-hov: rgba(255, 255, 255, 1);
+    --cover-bg: rgba(255, 255, 255, 0.8);
+  }
+  .light {
+    --col: rgb(31, 33, 35);
+    --bg: #ffffff;
+    --bx: rgba(0, 0, 0, 0.5);
+    --bx-hov: rgba(0, 0, 0, 1);
+    --cover-bg: rgba(0, 0, 0, 0.8);
+  }
+  .App {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--col);
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 1.1em;
+    font-weight: 700;
+    margin: 20px 0px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.27em;
+    width: 83vw;
+    text-align: center;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    margin: 0px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+  a {
+    color: #618df2;
+    font-size: 16px;
+  }
+  .lnk-btn {
+    padding: 8px 12px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3361cc;
+    border-radius: 5px;
+  }
+  .lnk-btn:hover {
+    background-color: #113ead;
+  }
+  #web-title {
+    font-size: 18px;
+    color: var(--col);
+    text-decoration: none;
+  }
+  #web-title::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+  }
+  .header-web {
+    display: none;
+  }
+  .header-mobile {
+    height: 72px;
+    width: 83vw;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-mobile a {
+    text-decoration: none;
+  }
+  .header-mobile .links {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    margin-right: 25px;
+    background-color: var(--cover-bg);
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .header-mobile .links a {
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .header-mobile ul {
+    padding: 10px;
+    margin: 0px;
+  }
+  .header-mobile ul li {
+    list-style-type: none;
+    text-align: left;
+    padding: 1px 0px;
+  }
+  .header-mobile .theme-toggler {
+    height: 32px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    top: 50px;
+  }
+  .header-mobile .theme-toggler :hover {
+    cursor: pointer;
+  }
+  .header-mobile .theme-toggler svg {
+    width: 20px;
+    padding: 8px;
+  }
+  .header-mobile .theme-toggler p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+  }
+  .contact {
+    width: 83vw;
     margin-bottom: 50px;
   }
   .contact p {

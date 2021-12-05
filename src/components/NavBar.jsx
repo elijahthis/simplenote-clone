@@ -42,7 +42,10 @@ c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z
 
   const popRef = React.useRef(null);
   const handlePop = () => {
-    if (popRef.current.style.height === "0px" || popRef.current.style.height === null) {
+    if (
+      popRef.current.style.height === "0px" ||
+      popRef.current.style.height === ""
+    ) {
       popRef.current.style.height = "125px";
     } else {
       popRef.current.style.height = "0px";
