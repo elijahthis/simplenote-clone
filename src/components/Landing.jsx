@@ -89,7 +89,7 @@ const Landing = (props) => {
         </Link>
       </section>
       <div className="big-img-wrapper">
-        <img src={landingImage} />
+        <img src={landingImage} alt="big landing" />
       </div>
       <section>
         <h2>Comprehensive underneath, simple on the surface</h2>
@@ -97,7 +97,7 @@ const Landing = (props) => {
           {features.map((feature) => (
             <div className="feature-div">
               <div className="feature-head">
-                <img src={feature.img} />
+                <img src={feature.img} alt="feature icon" />
                 <h5>{feature.title}</h5>
               </div>
               <p>{feature.desc}</p>
@@ -131,7 +131,7 @@ const Landing = (props) => {
             <div className="btn-link">
               <Link to="">
                 <div className="btn-store">
-                  <img src={store[0]} />
+                  <img src={store[0]} alt="store" />
                   <div>
                     <span>{store[1]}</span>
                     <p>{store[2]}</p>

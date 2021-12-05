@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <section style={{ paddingTop: "90px" }} className="signup-sect">
       <div>
-        <img src={logo} />
+        <img src={logo} alt="logo" />
         <h2>Log in</h2>
         <form>
           <input type="email" placeholder="Email" />
