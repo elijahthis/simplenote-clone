@@ -25,6 +25,8 @@
     text-align: center;
     background-color: var(--bg);
     color: var(--col);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   main {
     display: -webkit-box;
@@ -207,6 +209,8 @@
     text-align: center;
     background-color: var(--bg);
     color: var(--col);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   main {
     display: -webkit-box;
@@ -412,6 +416,8 @@
     text-align: center;
     background-color: var(--bg);
     color: var(--col);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
   main {
     display: -webkit-box;
